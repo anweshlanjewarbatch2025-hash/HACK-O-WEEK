@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anwesh Lanjewar | BTech CSE Student</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+        body { font-family: 'Outfit', sans-serif; background-color: #030712; }
+        .nav-blur { background: rgba(3, 7, 18, 0.8); backdrop-filter: blur(10px); }
+        .card-gradient { background: linear-gradient(145deg, #0f172a, #020617); border: 1px solid #1e293b; }
+        .text-gradient { background: linear-gradient(to right, #6366f1, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .skill-badge { background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.2); }
+    </style>
+</head>
+<body class="text-slate-200">
+
+    <nav class="fixed top-0 w-full z-50 nav-blur border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter">ANWESH<span class="text-indigo-500">.</span></div>
+            
+            <div class="hidden md:flex space-x-10 text-sm font-medium uppercase tracking-widest">
+                <a href="#home" class="hover:text-indigo-400 transition">Home</a>
+                <a href="#about" class="hover:text-indigo-400 transition">About</a>
+                <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+            </div>
+
+            <div class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fas fa-bars cursor-pointer text-indigo-500"></i>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 w-full p-6 space-y-4 text-center border-b border-slate-800">
+            <a href="#home" class="block py-2">Home</a>
+            <a href="#about" class="block py-2">About</a>
+            <a href="#skills" class="block py-2">Skills</a>
+            <a href="#projects" class="block py-2">Projects</a>
+            <a href="#contact" class="block py-2">Contact</a>
+        </div>
+    </nav>
+
+    <header id="home" class="min-h-screen flex flex-col justify-center items-center px-6 relative pt-20">
+        <div class="absolute w-96 h-96 bg-indigo-600/10 rounded-full blur-[120px] -z-10 top-1/4"></div>
+        <div class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.2em] text-indigo-400 uppercase skill-badge rounded-full">
+            Engineering the Future
+        </div>
+        <h1 class="text-6xl md:text-8xl font-bold text-center mb-6 tracking-tight">
+            Anwesh <span class="text-gradient italic">Lanjewar</span>
+        </h1>
+        <p class="text-slate-400 max-w-2xl text-center text-lg md:text-xl mb-10 leading-relaxed">
+            A BTech CSE student at <b>SIT Nagpur</b> focused on developing high-performance software and solving complex problems through elegant code.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#projects" class="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-bold transition shadow-lg shadow-indigo-500/20">Explore Projects</a>
+            <a href="#contact" class="px-8 py-3 border border-slate-700 hover:bg-slate-800 rounded-lg font-bold transition">Contact Me</a>
+        </div>
+    </header>
+
+    <section id="about" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-6 italic">About Me</h2>
+                <p class="text-slate-400 leading-relaxed mb-6">
+                    I am a first-year Computer Science Engineering student currently honing my skills in <b>Data Structures, Algorithms, and Object-Oriented Programming</b>. I am a tech enthusiast who loves exploring how software can change lives.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="card-gradient p-4 rounded-xl">
+                        <span class="text-indigo-400 font-bold block">COLLEGE</span>
+                        <span class="text-sm">SIT Nagpur</span>
+                    </div>
+                    <div class="card-gradient p-4 rounded-xl">
+                        <span class="text-indigo-400 font-bold block">YEAR</span>
+                        <span class="text-sm">1st Year</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-4 -left-4 w-full h-full border-2 border-indigo-500 rounded-2xl -z-10"></div>
+                <div class="card-gradient p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-6 text-indigo-400 underline underline-offset-8">Education Timeline</h3>
+                    <div class="space-y-6">
+                        <div class="relative pl-6 border-l border-indigo-500/30">
+                            <div class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[6.5px] top-1.5"></div>
+                            <h4 class="font-bold">B.Tech - Computer Science</h4>
+                            <p class="text-sm text-slate-400">Symbiosis Institute of Tech, Nagpur</p>
+                            <span class="text-xs text-indigo-400">2025 - 2029</span>
+                        </div>
+                        <div class="relative pl-6 border-l border-indigo-500/30">
+                            <div class="absolute w-3 h-3 bg-slate-600 rounded-full -left-[6.5px] top-1.5"></div>
+                            <h4 class="font-bold">Higher Secondary School</h4>
+                            <p class="text-sm text-slate-400">Nagpur, India</p>
+                            <span class="text-xs text-slate-500">Graduated 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-slate-900/20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 text-center tracking-widest uppercase">Technical Expertise</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="card-gradient p-8 rounded-2xl text-center group hover:scale-105 transition">
+                    <i class="fab fa-python text-5xl text-yellow-500 mb-4"></i>
+                    <h4 class="font-bold">Python</h4>
+                </div>
+                <div class="card-gradient p-8 rounded-2xl text-center group hover:scale-105 transition">
+                    <i class="fas fa-code text-5xl text-blue-500 mb-4"></i>
+                    <h4 class="font-bold">C / C++</h4>
+                </div>
+                <div class="card-gradient p-8 rounded-2xl text-center group hover:scale-105 transition">
+                    <i class="fab fa-html5 text-5xl text-orange-500 mb-4"></i>
+                    <h4 class="font-bold">Frontend</h4>
+                </div>
+                <div class="card-gradient p-8 rounded-2xl text-center group hover:scale-105 transition">
+                    <i class="fab fa-git-alt text-5xl text-red-500 mb-4"></i>
+                    <h4 class="font-bold">Version Control</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-12 italic">Academic Projects</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="card-gradient overflow-hidden rounded-3xl group">
+                <div class="h-56 bg-slate-800 flex items-center justify-center relative">
+                    <i class="fas fa-robot text-7xl text-indigo-500/30 group-hover:scale-110 transition duration-500"></i>
+                    <div class="absolute bottom-4 left-4 flex gap-2">
+                        <span class="text-[10px] skill-badge text-indigo-400 px-3 py-1 rounded-full uppercase font-bold tracking-widest">Python</span>
+                        <span class="text-[10px] skill-badge text-indigo-400 px-3 py-1 rounded-full uppercase font-bold tracking-widest">Logic</span>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3">CLI Management System</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        A backend management system developed for a fictional library, using C-language with linked lists for data storage and retrieval.
+                    </p>
+                    <a href="#" class="text-indigo-400 font-bold text-sm uppercase tracking-wider hover:underline">Source Code <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+            <div class="card-gradient overflow-hidden rounded-3xl group">
+                <div class="h-56 bg-slate-800 flex items-center justify-center relative">
+                    <i class="fas fa-file-code text-7xl text-purple-500/30 group-hover:scale-110 transition duration-500"></i>
+                    <div class="absolute bottom-4 left-4 flex gap-2">
+                        <span class="text-[10px] skill-badge text-purple-400 px-3 py-1 rounded-full uppercase font-bold tracking-widest">Web Dev</span>
+                        <span class="text-[10px] skill-badge text-purple-400 px-3 py-1 rounded-full uppercase font-bold tracking-widest">UI/UX</span>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3">Portfolio Site v1.0</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        A personal website built using HTML and Tailwind CSS to showcase progress as a 1st-year student at SIT Nagpur.
+                    </p>
+                    <a href="#" class="text-indigo-400 font-bold text-sm uppercase tracking-wider hover:underline">Source Code <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 max-w-4xl mx-auto px-6">
+        <div class="card-gradient p-12 rounded-[2rem] text-center border-indigo-500/20 shadow-2xl shadow-indigo-500/5">
+            <h2 class="text-4xl font-bold mb-4">Let's Connect</h2>
+            <p class="text-slate-400 mb-10">I am currently looking for open-source projects to contribute to and local internships in Nagpur.</p>
+            <div class="flex flex-col items-center space-y-4 mb-10">
+                <a href="mailto:anwesh@example.com" class="text-xl font-bold text-indigo-400">anwesh.lanjewar@sitnagpur.edu.in</a>
+                <p class="text-slate-500 italic">Nagpur, Maharashtra, India</p>
+            </div>
+            <div class="flex justify-center gap-10 text-3xl">
+                <a href="#" class="text-slate-500 hover:text-white transition"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-slate-500 hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-slate-500 hover:text-pink-500 transition"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-900 text-center text-slate-600 text-sm">
+        <p>&copy; 2026 Designed & Built by <span class="text-slate-400">Anwesh Lanjewar</span></p>
+        <p class="mt-2 uppercase tracking-[0.3em] text-[10px]">SIT NAGPUR • BTECH CSE</p>
+    </footer >
+
+</body>
+</html>
